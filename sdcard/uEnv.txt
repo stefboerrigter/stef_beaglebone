@@ -1,0 +1,9 @@
+#optargs=
+#mmcroot=/dev/mmcblk0p2 ro
+#mmcrootfstype=ext4 rootwait fixrtc
+
+#To boot old v3.2.x based kernel enable: (BeagleBone only)
+#uenvcmd=run loaduimage; run mmc_classic_boot
+
+#To boot new v3.8.x based device tree:
+uenvcmd=run loaduimage; run loadfdt; run mmcargs; bootz ${loadaddr} - ${fdtaddr}
