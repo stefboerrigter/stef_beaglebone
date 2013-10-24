@@ -1,6 +1,7 @@
 install all required packages.
 Download this archive and run:
 
+cd poky
 source oe-init-build-env beaglebone
 
 bitbake core-image-minimal-dev
