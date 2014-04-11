@@ -34,6 +34,11 @@ PV = "3.8.13"
 MACHINE_KERNEL_PR_append = "g+gitr${SRCPV}"
 PR = "${MACHINE_KERNEL_PR}"
 
-SRC_URI = "git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git;protocol=git;branch=${BRANCH} \
+
+SRC_URI = "git://github.com/stefboerrigter/stef_ti_linux_clone.git;protocol=http;branch=${BRANCH} \
            file://defconfig \
           "
+
+#SRC_URI = "git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git;protocol=git;branch=${BRANCH} \
+#           file://defconfig \
+#          "
